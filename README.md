@@ -80,7 +80,7 @@ print ("y = " + str(train_y[0,index]) + ". It's a " + classes[train_y[0,index]].
 
 
     
-![png](output_7_1.png)
+![png](images/output_7_1.png)
     
 
 
@@ -128,7 +128,7 @@ X_flatten = X.reshape(X.shape[0], -1).T      # X.T is the transpose of X
 
 As usual, you reshape and standardize the images before feeding them to the network. The code is given in the cell below.
 
-<img src="imvectorkiank.png" style="width:450px;height:300px;">
+<img src="images/imvectorkiank.png" style="width:450px;height:300px;">
 
 <caption><center> <u>Figure 1</u>: Image to vector conversion. <br> </center></caption>
 
@@ -167,7 +167,7 @@ Let's look at the two architectures.
 
 ### 3.1 - 2-layer neural network
 
-<img src="2layerNN_kiank.png" style="width:650px;height:400px;">
+<img src="images/2layerNN_kiank.png" style="width:650px;height:400px;">
 <caption><center> <u>Figure 2</u>: 2-layer neural network. <br> The model can be summarized as: ***INPUT -> LINEAR -> RELU -> LINEAR -> SIGMOID -> OUTPUT***. </center></caption>
 
 <u>Detailed Architecture of figure 2</u>:
@@ -182,7 +182,7 @@ Let's look at the two architectures.
 
 It is hard to represent an L-layer deep neural network with the above representation. However, here is a simplified network representation:
 
-<img src="LlayerNN_kiank.png" style="width:650px;height:400px;">
+<img src="images/LlayerNN_kiank.png" style="width:650px;height:400px;">
 <caption><center> <u>Figure 3</u>: L-layer neural network. <br> The model can be summarized as: ***[LINEAR -> RELU] $\times$ (L-1) -> LINEAR -> SIGMOID***</center></caption>
 
 <u>Detailed Architecture of figure 3</u>:
@@ -366,7 +366,7 @@ parameters = two_layer_model(train_x, train_y, layers_dims = (n_x, n_h, n_y), nu
 
 
     
-![png](output_19_1.png)
+![png](images/output_19_1.png)
     
 
 
@@ -527,7 +527,7 @@ parameters = L_layer_model(train_x, train_y, layers_dims, num_iterations = 2500,
 
 
     
-![png](output_28_1.png)
+![png](images/output_28_1.png)
     
 
 
@@ -562,7 +562,7 @@ print_mislabeled_images(classes, test_x, test_y, pred_test)
 
 
     
-![png](output_33_0.png)
+![png](images/output_33_0.png)
     
 
 
@@ -585,10 +585,10 @@ You can use your own image and see the output of your model. To do that:
 
 
 ```python
-## START CODE HERE ##
+
 my_image = "my_image.jpg" # change this to the name of your image file 
 my_label_y = [1] # the true class of your image (1 -> cat, 0 -> non-cat)
-## END CODE HERE ##
+
 
 fname = "images/" + my_image
 image = np.array(ndimage.imread(fname, flatten=False))
