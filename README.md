@@ -600,21 +600,6 @@ print ("y = " + str(np.squeeze(my_predicted_image)) + ", your L-layer model pred
 ```
 
 
-    ---------------------------------------------------------------------------
-
-    AttributeError                            Traceback (most recent call last)
-
-    <ipython-input-18-3a159c299b84> in <module>
-          5 
-          6 fname = "images/" + my_image
-    ----> 7 image = np.array(ndimage.imread(fname, flatten=False))
-          8 my_image = scipy.misc.imresize(image, size=(num_px,num_px)).reshape((num_px*num_px*3,1))
-          9 my_predicted_image = predict(my_image, my_label_y, parameters)
-
-
-    AttributeError: module 'scipy.ndimage' has no attribute 'imread'
-
-
 **References**:
 
 - for auto-reloading external module: http://stackoverflow.com/questions/1907993/autoreload-of-modules-in-ipython
