@@ -1,5 +1,6 @@
 # Deep Neural Network for Image Classification: Application
 
+
 Welcome!
 
 In this project I am going to build a Deep Neural Network for Image Classification: Application to recognize cats.
