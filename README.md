@@ -394,7 +394,7 @@ predictions_test = predict(test_x, test_y, parameters)
 
 **Note**: You may notice that running the model on fewer iterations (say 1500) gives better accuracy on the test set. This is called "early stopping" and we will talk about it in the next course. Early stopping is a way to prevent overfitting. 
 
-Hmmm! It seems that the 2-layer neural network has better performance (72%) than the logistic regression implementation (70%, assignment week 2). Let's see if it can do even better with an L-layer model.
+Hmmm! It seems that the 2-layer neural network has better performance (72%) than the logistic regression implementation. Let's see if it can do even better with an L-layer model.
 
 ## 5 - L-layer Neural Network
 
