@@ -120,9 +120,9 @@ print ("test_y shape: " + str(test_y.shape))
 
 For convenience, reshape images of shape (num_px, num_px, 3) in a numpy-array of shape (num_px $*$ num_px $*$ 3, 1). After this, the training (and test) dataset is a numpy-array where each column represents a flattened image. There is m_train (respectively m_test) columns.
 
-Reshaping the training and test data sets so that images of size (num_px, num_px, 3) are flattened into single vectors of shape (num\_px $*$ num\_px $*$ 3, 1).
+Reshaping the training and test data sets so that images of size (num_px, num_px, 3) are flattened into single vectors of shape (num\_px *$ num\_px $*$ 3, 1).
 
-A trick to flatten a matrix X of shape (a,b,c,d) to a matrix X_flatten of shape (b$*$c$*$d, a) is to use: 
+A trick to flatten a matrix X of shape (a,b,c,d) to a matrix X_flatten of shape (*bxcxd*, a) is to use: 
 ```python
 X_flatten = X.reshape(X.shape[0], -1).T      # X.T is the transpose of X
 ```
