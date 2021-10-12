@@ -5,14 +5,14 @@ Welcome!
 
 In this project I am going to build a Deep Neural Network for Image Classification: Application to recognize cats.
 
-**By completion of this project, I've learn how to:** 
+**From this project, I've learn how to:** 
 
-- Building the general architecture of a learning algorithm, including:
-- Initializing parameters
-- Calculating the cost function and its gradient
-- Using an optimization algorithm (gradient descent)
-- Gather all three functions above into a main model function, in the right order.
-- Build and apply a deep neural network to supervised learning. 
+- Build the general architecture of a learning algorithm, including:
+ - Initializing parameters
+ - Calculating the cost function and its gradient
+ - Using an optimization algorithm (gradient descent)
+ - Gather all three functions above into a main model function, in the right order.
+ - Build and apply a deep neural network to supervised learning. 
 
 Let's get started!
 
