@@ -164,7 +164,7 @@ You will build two different models:
 
 I will then compare the performance of these models, and also try out different values for $L$. 
 
-Let's look at the two architectures. You can also check out the [Logistic Regression model with one hidden layer](https://github.com/rajeshidumalla/Cat-Recognition-using-Logistic-Regression-with-a-Neural-Network-mindset) thay I have developed which will give 70% accuracy on this datasets. 
+Let's look at the two architectures. You can also check out the [Logistic Regression model with one hidden layer](https://github.com/rajeshidumalla/Cat-Recognition-using-Logistic-Regression-with-a-Neural-Network-mindset) that I have developed which will give 70% accuracy on this datasets. 
 
 ### 3.1 - 2-layer neural network
 
