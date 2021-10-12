@@ -174,7 +174,8 @@ Let's look at the two architectures.
 <u>Detailed Architecture of figure 2</u>:
 - The input is a (64,64,3) image which is flattened to a vector of size $(12288,1)$. 
 - The corresponding vector: $[x_0,x_1,...,x_{12287}]^T$ is then multiplied by the weight matrix $W^{[1]}$ of size $(n^{[1]}, 12288)$.
-- Then I will add a bias term and take its relu to get the following vector: $[a_0^{[1]}, a_1^{[1]},..., a_{n^{[1]}-1}^{[1]}]^T$.
+- Then I will add a bias term and take its relu to get the following vector:  $[a_0^{[1]}, a_1^{[1]},..., a_{n^{[1]}-1}^{[1]}]^T$.
+
 - Then I will repeat the same process.
 - I will multiply the resulting vector by $W^{[2]}$ and add intercept (bias). 
 - Finally, I will take the sigmoid of the result. If it is greater than 0.5, I will classify it to be a cat.
